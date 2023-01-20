@@ -142,7 +142,7 @@ p {
 .btn-clicked {
 	background-color: rgb(197, 128, 0);
 	transition: none;
-	pointer-events: none;
+	// pointer-events: none;
 
 	p {
 		color: $colr-bg;

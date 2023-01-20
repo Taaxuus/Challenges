@@ -161,7 +161,6 @@ p {
   background-color: rgb(197, 128, 0);
   -webkit-transition: none;
   transition: none;
-  pointer-events: none;
 }
 .btn-clicked p {
   color: #131519;
