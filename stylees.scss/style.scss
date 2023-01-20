@@ -1,0 +1,159 @@
+// reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+//  variables
+$colr-bg: #131519;
+$color-bg-gradient: linear-gradient(0deg, rgb(39, 42, 42) 0%, rgba(33, 32, 30, 1) 100%);
+$color-white: rgb(222, 222, 222);
+
+// styles
+
+body {
+	height: 100vh;
+	background-color: $colr-bg;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1,
+p {
+	color: rgb(157, 155, 155);
+}
+
+.card-1 {
+	// display: none;
+	background: $color-bg-gradient;
+	max-width: 330px;
+	border-radius: 12px;
+	padding: 20px;
+
+	&__star {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		background-color: $colr-bg;
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		color: $color-white;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		margin-bottom: 25px;
+	}
+
+	&__steps {
+		z-index: 1;
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 20px;
+
+		&--number {
+			cursor: pointer;
+			z-index: 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 50px;
+			background-color: $colr-bg;
+			border-radius: 50%;
+			transition: all 0.5s;
+			color: $color-white;
+
+			p {
+				z-index: 1;
+			}
+
+			&:hover {
+				background-color: #565658;
+			}
+		}
+	}
+
+	&__btn--box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__submit-btn {
+		padding: 16px 115px;
+		background-color: rgb(197, 128, 0);
+		color: $color-white;
+		border: none;
+		border-radius: 30px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin-bottom: 5px;
+		transition: all 0.5s;
+		&:hover {
+			background-color: $color-white;
+			color: $colr-bg;
+		}
+	}
+}
+
+.card-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $color-bg-gradient;
+	max-width: 330px;
+	border-radius: 12px;
+	padding: 20px;
+
+	img {
+		margin: 20px;
+	}
+
+	&__score {
+		// display: none;
+		padding: 5px 15px;
+		text-align: center;
+		background-color: $colr-bg;
+		border-radius: 20px;
+		margin-bottom: 30px;
+	}
+	&__title {
+		color: $color-white;
+		margin-bottom: 10px;
+	}
+	&__text {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+}
+
+.d-none {
+	display: none;
+}
+
+.btn-clicked {
+	background-color: rgb(197, 128, 0);
+	transition: none;
+	pointer-events: none;
+
+	p {
+		color: $colr-bg;
+	}
+
+	&:hover {
+		background-color: rgb(197, 128, 0);
+	}
+}
+
+//MEDIA
+
+@media screen and (max-width: 992px) {
+}
