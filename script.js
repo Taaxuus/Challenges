@@ -5,8 +5,14 @@ const scores = document.querySelectorAll('.card-1__steps--number');
 
 let finalScore = 0;
 
+let activeButton;
 scores.forEach(score => {
 	score.addEventListener('click', e => {
-		e.target.classList.toggle('btn-clicked');
+		if (activeButton) {
+			activeButton.classList.remove('btn-clicked');
+		}
+		e.target.classList.add('btn-clicked');
+		activeButton = e.target;
+		console.log(activeButton);
 	});
 });
