@@ -8,3 +8,7 @@ scores.forEach(score => {
 			: e.target.classList.add('btn-clicked');
 	});
 });
+
+const first = second => {
+	third;
+};
